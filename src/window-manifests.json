@@ -138,6 +138,13 @@
     "prettyDesc": "Car style W'bal gauge",
     "options": {"width": 0.20, "aspectRatio": 0.8}
 }, {
+    "type": "power-hr-graph",
+    "groupTitle": "Graphs",
+    "file": "/pages/graphs/power-hr.html",
+    "prettyName": "Power/HR Graph",
+    "prettyDesc": "Real-time streaming graph of power, HR, and other metrics",
+    "options": {"width": 0.30, "height": 0.15, "minWidth": 200, "minHeight": 80}
+}, {
     "type": "stats-for-nerds",
     "groupTitle": "Misc",
     "file": "/pages/stats-for-nerds.html",
