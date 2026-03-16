@@ -2926,8 +2926,8 @@ export class StatsProcessor extends Events.EventEmitter {
             this._athleteData.set(state.athleteId, this._createAthleteData(state, now));
         }
         const worldMeta = Env.worldMetas[state.courseId];
-        const elOffset = worldMeta.eleOffset || 0;
         if (worldMeta) {
+            const elOffset = worldMeta.eleOffset || 0;
             state.latlng = worldMeta.flippedHack ?
                 [(state.x / (worldMeta.latDegDist * 100)) + worldMeta.latOffset,
                     (state.y / (worldMeta.lonDegDist * 100)) + worldMeta.lonOffset] :
